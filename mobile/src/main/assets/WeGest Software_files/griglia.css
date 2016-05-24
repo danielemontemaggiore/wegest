@@ -1,0 +1,121 @@
+/* ------------------------------------------------------------------------ */
+
+/* GRIGLIA */
+
+.sezione {clear:both;}
+.sezione:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.sezione .colonna {display:block; height:100%; float:left; margin:0.3% 0 1.7% 1.5%;}
+.sezione .colonna:first-child {margin-left:0;}
+
+.sezione .colonna.no_margin_left {margin-left:0px;}
+
+.sezione .colonna.max_width30rem {max-width:30rem;}
+
+/* 2 */
+.sezione .colonna.larghezza_1_2 {width:49.25%;}
+.sezione .colonna.larghezza_2_2 {width:100%;}
+
+/* 3 */
+.sezione .colonna.larghezza_1_3 {width:32.33%;}
+.sezione .colonna.larghezza_2_3 {width:66.16%;}
+.sezione .colonna.larghezza_3_3 {width:100%;}
+
+/* 6 */
+.sezione .colonna.larghezza_1_6 {width:15.416%;}
+.sezione .colonna.larghezza_2_6 {width:32.332%;}
+.sezione .colonna.larghezza_3_6 {width:49.25%;}
+.sezione .colonna.larghezza_4_6 {width:66.164%;}
+.sezione .colonna.larghezza_5_6 {width:83.08%;}
+.sezione .colonna.larghezza_6_6 {width:100%;}
+
+/* 8 */
+.sezione .colonna.larghezza_1_8 {width:11.187%;}
+.sezione .colonna.larghezza_2_8 {width:23.875%;}
+.sezione .colonna.larghezza_3_8 {width:36.562%;}
+.sezione .colonna.larghezza_4_8 {width:49.25%;}
+.sezione .colonna.larghezza_5_8 {width:61.937%;}
+.sezione .colonna.larghezza_6_8 {width:74.625%;}
+.sezione .colonna.larghezza_7_8 {width:87.312%;}
+.sezione .colonna.larghezza_8_8 {width:100%;}
+
+/* 10 */
+.sezione .colonna.larghezza_1_10 {width:8.65%;}
+.sezione .colonna.larghezza_2_10 {width:18.8%;}
+.sezione .colonna.larghezza_3_10 {width:28.95%;}
+.sezione .colonna.larghezza_4_10 {width:39.1%;}
+.sezione .colonna.larghezza_5_10 {width:49.25%;}
+.sezione .colonna.larghezza_6_10 {width:59.4%;}
+.sezione .colonna.larghezza_7_10 {width:69.55%;}
+.sezione .colonna.larghezza_8_10 {width:79.7%;}
+.sezione .colonna.larghezza_9_10 {width:89.85%;}
+.sezione .colonna.larghezza_10_10 {width:100%;}
+
+/* 10 no margin */
+.sezione .colonna.larghezza_1_10.no_margin_left {width:10.15%;}
+.sezione .colonna.larghezza_2_10.no_margin_left {width:20.3%;}
+.sezione .colonna.larghezza_3_10.no_margin_left {width:30.45%;}
+.sezione .colonna.larghezza_4_10.no_margin_left {width:40.6%;}
+.sezione .colonna.larghezza_5_10.no_margin_left {width:50.75%;}
+.sezione .colonna.larghezza_6_10.no_margin_left {width:60.9%;}
+.sezione .colonna.larghezza_7_10.no_margin_left {width:71.05%;}
+.sezione .colonna.larghezza_8_10.no_margin_left {width:81.2%;}
+.sezione .colonna.larghezza_9_10.no_margin_left {width:91.35%;}
+.sezione .colonna.larghezza_1_10.no_margin_left:first-child {width:8.65%;}
+.sezione .colonna.larghezza_2_10.no_margin_left:first-child {width:18.8%;}
+.sezione .colonna.larghezza_3_10.no_margin_left:first-child {width:28.95%;}
+.sezione .colonna.larghezza_4_10.no_margin_left:first-child {width:39.1%;}
+.sezione .colonna.larghezza_5_10.no_margin_left:first-child {width:49.25%;}
+.sezione .colonna.larghezza_6_10.no_margin_left:first-child {width:59.4%;}
+.sezione .colonna.larghezza_7_10.no_margin_left:first-child {width:69.55%;}
+.sezione .colonna.larghezza_8_10.no_margin_left:first-child {width:79.7%;}
+.sezione .colonna.larghezza_9_10.no_margin_left:first-child {width:89.85%;}
+
+/* ------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 979px) {
+/* iphone e smartphone android sia in portrait che in landscape */
+	
+	.sezione .colonna:not(.mantieni_proporzioni) {float:none; margin:1% 0px;}
+
+	.sezione .colonna.larghezza_1_2:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_2_2:not(.mantieni_proporzioni) {width:100%;}
+	
+	.sezione .colonna.larghezza_1_3:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_2_3:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_3_3:not(.mantieni_proporzioni) {width:100%;}
+	
+	.sezione .colonna.larghezza_1_6:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_2_6:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_3_6:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_4_6:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_5_6:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_6_6:not(.mantieni_proporzioni) {width:100%;}
+
+	.sezione .colonna.larghezza_1_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_2_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_3_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_4_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_5_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_6_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_7_8:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_8_8:not(.mantieni_proporzioni) {width:100%;}
+	
+	.sezione .colonna.larghezza_1_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_2_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_3_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_4_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_5_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_6_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_7_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_8_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_9_10:not(.mantieni_proporzioni) {width:100%;}
+	.sezione .colonna.larghezza_10_10:not(.mantieni_proporzioni) {width:100%;}
+	
+}
+
+/* ------------------------------------------------------------------------ */

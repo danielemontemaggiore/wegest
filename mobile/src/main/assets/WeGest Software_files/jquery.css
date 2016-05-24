@@ -1,0 +1,5 @@
+.select_switch {display:inline-block; height:1.9rem; line-height:1.9rem; padding:0 0.7rem; border-radius:5px; box-shadow:0px 0px 3px 0px rgba(0,0,0,0.3); font-size:0.9rem; text-shadow:1px 1px 0px rgba(80,80,80,0.2); cursor:pointer;}
+.select_switch.positivo {border:1px solid #009688; background-color:#05CA0F; color:#FFF;}
+.select_switch.negativo{border:1px solid #666; background-color:#999; color:rgba(255,255,255,0.7)}
+.select_switch .testo {}
+.select_switch .testo span {display:inline-block; vertical-align:middle; padding-right:0.8rem; font-size:1.1rem;}

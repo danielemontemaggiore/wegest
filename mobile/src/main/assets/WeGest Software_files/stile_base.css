@@ -1,0 +1,187 @@
+/* ------------------------------------------------------------------------ */
+
+/* Reset tag */
+* {
+	outline:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	/*cursor:default;*/
+} 
+html, body {margin:0; padding:0; background:#FFF; font-family:Roboto, FontAwesome, sans-serif; font-size:16px; overflow:hidden;}
+div, p, span {margin:0; padding:0; border:none;}
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline;}
+
+/* ------------------------------------------------------------------------ */
+
+/* Costanti */
+.clear_both {clear:both; height:0px;}
+.float_left {float:left;}
+.float_right {float:right;}
+.margine_10_soprasotto {margin-top:10px; margin-bottom:10px;}
+.margine_10_sotto {margin-bottom:10px;}
+
+/* ------------------------------------------------------------------------ */
+
+#dpi {height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;} /* Div per il calcolo dei pollici dello schermo*/
+
+/* ------------------------------------------------------------------------ */
+
+/* Flexbox */
+.display_flex {display:-webkit-box; display:-webkit-flex; display:flex;}
+.flex_direction_column {-webkit-box-orient:vertical; -webkit-flex-direction:column; flex-direction:column;}
+.flex_direction_row {-webkit-box-orient:horizontal; -webkit-flex-direction:row; flex-direction:row;}
+.flex_1 {-webkit-box-flex:1; -webkit-flex:1; flex:1;}
+
+/* ------------------------------------------------------------------------ */
+
+/* Campi di testo */
+input, textarea, label, select {/* riabilita la modifica del testo */
+    -webkit-touch-callout:default;
+    -webkit-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+	font-family:Roboto, FontAwesome, sans-serif;
+}
+input[type='text'], 
+input[type='password'],
+input[type='number'], 
+textarea
+{
+	-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; 
+	border:2px solid #999; border-radius:5px; outline:none; padding:6px 10px; resize:none;
+	font-family:Roboto, FontAwesome, sans-serif;
+}
+
+input[type='text']:hover,
+input[type='password']:hover, 
+input[type='number']:hover, 
+textarea:hover					{border:2px solid #F30;}
+
+input[type='text']:focus,
+input[type='password']:focus
+input[type='number']:focus,
+textarea:focus					{border:2px solid #F30; box-shadow: 0 0 5px rgba(100, 100, 100, 0.5)}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Pulsanti base */
+input[type='button'], input[type='submit'] 
+{
+	border:none; background:#09F; color:#FFF; border-radius:5px; padding:8px 12px; font-size:16px;
+	background-repeat:no-repeat; background-position:center right; cursor:pointer; outline:none;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+input[type='button']:hover, input[type='submit']:hover {background-color:#0CF;}
+input[type='button']:active, input[type='submit']:active {background-color:#06F;}
+
+button, .button {
+	padding:0.7em 1em;
+	border:none;
+	background:#09F;
+	color:#FFF;
+	border-radius:0.2rem;
+	font-size:0.9rem;
+	cursor:pointer;
+	text-transform:uppercase;
+	letter-spacing:0.05rem;
+	font-family:Roboto, FontAwesome, sans-serif;
+	font-weight:500;
+	text-shadow:0px 0px 2px rgba(0,0,0,0.5);
+	box-shadow:0px 0px 5px rgba(0,0,0,0.30);
+}
+
+button.small {font-size:0.75rem; padding:0.3rem 0.4rem;}
+
+button.conferma {background-color:#4CAF50;}
+button.attenzione {background-color:#F44336;}
+button.avviso {background-color:#fb8c00;}
+button.neutro {background-color:#fff; color:#000;}
+button.pulsante {background-color:#AAAAAA; color:#fff;}
+
+button.flat {background-color:transparent; box-shadow:none; color:#09F; text-shadow:none;}
+button.flat:hover {background-color:rgba(0,0,0,0.08);}
+button.conferma.flat {color:#4CAF50;}
+button.attenzione.flat {color:#F44336;}
+button.avviso.flat {color:#fb8c00;}
+button.neutro.flat {color:#000;}
+button.pulsante.flat {color:#EDEFED;}
+
+
+/* Azioni contestuali pulsanti */
+input.vai		{background-image:url(button_freccia_vai.png); padding-right:35px;}
+input.indietro	{background-image:url(button_freccia_indietro.png); padding-right:35px;}
+input.su		{background-image:url(button_freccia_su.png); padding-right:35px;}
+input.aggiungi	{background-image:url(button_aggiungi.png); padding-right:35px;}
+input.sottrai	{background-image:url(button_sottrai.png); padding-right:35px;}
+input.modifica	{background-image:url(button_modifica.png); padding-right:35px;}
+input.aggiorna	{background-image:url(button_aggiorna.png); padding-right:35px;}
+input.elimina	{background-image:url(button_elimina.png); padding-right:35px;}
+input.conferma	{background-image:url(button_conferma.png); padding-right:35px;}
+input.annulla	{background-image:url(button_annulla.png); padding-right:35px;}
+input.cerca		{background-image:url(button_cerca.png); padding-right:35px;}
+input.stampa	{background-image:url(button_stampa.png); padding-right:35px;}
+
+
+/* Stili pulsanti */
+input.orange		{background-color:#F60; color:#FFF;}
+input.orange:hover	{background-color:#F80;}
+input.orange:active {background-color:#F30;}
+
+/* ------------------------------------------------------------------------ */
+
+.errore {padding:10px; background-color:#ffebee; color:#f44336;}
+.info {padding:10px; background-color:#e3f2fd; color:#2196f3;}
+
+/* ------------------------------------------------------------------------ */
+
+/* Tabella DIV */
+.tabella {clear:both;}
+.tabella .tabella_riga {border-bottom:1px dashed #CCCCCC; padding:10px; position:relative;}
+.tabella .tabella_riga.alternata {background:#eeeeee;}
+.tabella .tabella_riga.selezionabile {cursor:pointer;}
+.tabella .colonna {float:left; text-align:left; padding-left:5px;}
+.tabella .colonna_radio {float:left; width:30px; text-align:center;}
+.tabella .riga_clear {clear:both; height:0px;}
+.tabella .tabella_riga.selezionabile:hover {background:#0064AE; color:#FFFFFF;}
+.selezionata {background:#0072C6; color:#FFF;}
+
+/* ------------------------------------------------------------------------ */
+
+.colonna_campo_intestazione {font-size:1em;}
+.colonna_campo_descrizione {font-size:0.8em; font-style:italic;}
+.colonna_campo_padding_verticale10 {clear:both; height:10px;}
+.colonna_campo_padding_verticale20 {clear:both; height:20px;}
+.colonna_campo_padding_verticale25 {clear:both; height:25px;}
+.colonna_campo_padding_verticale30 {clear:both; height:30px;}
+.colonna_campo_1_1 {float:left; width:100%; padding-bottom:10px;}
+.colonna_campo_1_2 {float:left; width:49%; margin-right:1%; padding-bottom:10px;}
+.colonna_campo_2_3 {float:left; width:65%; margin-right:1%; max-width:700px; padding-bottom:10px;}
+.colonna_campo_1_3 {float:left; width:32%; margin-right:1%; max-width:350px; padding-bottom:10px;}
+.colonna_campo_1_4 {float:left; width:24%; margin-right:1%; max-width:300px; padding-bottom:10px;}
+.colonna_campo_1_6 {float:left; width:15%; margin-right:1%; max-width:300px; padding-bottom:10px;}
+.colonna_campo_1_12 {float:left; width:7%; margin-right:1%; max-width:90px; padding-bottom:10px;}
+
+/* ------------------------------------------------------------------------ */
+
+.intestazione_elementi {font-size:14px; padding-top:20px; padding-bottom:5px; margin-bottom:10px; border-bottom:1px solid #2C3237; clear:both; color:#2C3237;}
+.intestazione_elementi:first-child {padding-top:0px;}
+
+/* ------------------------------------------------------------------------ */
+
+/* Form */
+h1.form_intestazione {margin-bottom:0.5rem; padding-top:1.5rem; clear:both; border-bottom:1px solid #37474F; color:#37474F; font-weight:bold;}
+h2.form_descrizione  {margin-bottom:0.5rem; margin-top:-0.2rem; font-size:0.90rem; color:#757575;}
+
+h2.form_intestazione {color:#212121; text-align:left}
+div.form_descrizione {padding-bottom:0.3rem; font-size:0.80rem; color:#757575;}
+
+/* ------------------------------------------------------------------------ */

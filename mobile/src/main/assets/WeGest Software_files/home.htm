@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=1024, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.i-salon.eu/template/touch-icon-ipad.png">
+<meta name="apple-mobile-web-app-title" content="WeGest Software">
+<title>WeGest Software</title>
+
+<!-- Css -->
+<link href="WeGest%20Software_files/stile_base.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/stile_layout.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/griglia.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/card.css" rel="stylesheet" type="text/css">
+
+<!-- Font custom -->
+<link href="WeGest%20Software_files/css.css" rel="stylesheet" type="text/css">
+
+<!-- FontAwesome -->
+<link href="WeGest%20Software_files/font-awesome.css" rel="stylesheet">
+
+<!-- CSS JQuery <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/south-street/jquery-ui.css?21223039" rel="stylesheet" type="text/css" />
+-->
+<link href="WeGest%20Software_files/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/basic-jquery-slider.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/chosen.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/spectrum.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/jquery_002.css" rel="stylesheet" type="text/css">
+<link href="WeGest%20Software_files/jquery.css" rel="stylesheet" type="text/css">
+
+<!-- CKEditor -->
+<script type="text/javascript" src="WeGest%20Software_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+
+<!-- JQuery -->
+<script type="text/javascript" src="WeGest%20Software_files/jquery-1.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery-ui.js"></script>
+<script>//$.datepicker.setDefaults( $.datepicker.regional[ "it" ] );</script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery-ui-i18n.js"></script>
+
+<!-- Plugin JQuery -->
+<script type="text/javascript" src="WeGest%20Software_files/jquery_002.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_011.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_010.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_003.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/spectrum.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_008.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_005.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_012.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_004.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_007.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_009.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/jquery_006.js"></script>
+
+<!-- Isotope layout -->
+<script type="text/javascript" src="WeGest%20Software_files/isotope.js"></script>
+
+<!-- Tiny sort -->
+<script type="text/javascript" src="WeGest%20Software_files/tinysort.js"></script>
+
+<!-- Moment -->
+<script type="text/javascript" src="WeGest%20Software_files/moment-with-langs.js"></script>
+
+<!-- Ion Sound -->
+<script type="text/javascript" src="WeGest%20Software_files/ion.js"></script>
+
+<script>
+"use strict"; //option explicit
+</script>
+
+<!-- Javascript WE Gest -->
+<script type="text/javascript" src="WeGest%20Software_files/variabili.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/funzioni_stampa.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/funzioni_interazione_net.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/funzioni.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/layout.js"></script>
+<script type="text/javascript" src="WeGest%20Software_files/inizializzazione.js"></script>
+
+</head>
+
+<body>
+    
+    <div id="dpi"></div>
+  
+    <div id="pulsante_impostazioni"><i class="fa fa-cog"></i></div>
+
+
+
+
+<div style="height: 602px; width: 1366px;" id="wrapper">
+
+
+  
+  
+  <style>
+	#pannello_login {position:absolute; top:0px; left:0px; z-index:50;}
+	#pannello_login form {width:20%; min-width:300px; text-align:center; position:absolute; z-index:51;}
+	#pannello_login form input {width:80%; font-size:1.2rem;}
+	#pannello_login .pannello_login_scorrevole_status {padding:0.5em;}
+	#pannello_login .avanzamento {font-size:1.3rem; color:#666;}
+	
+	
+	#pannello_login .pannello_login_ticker {position:absolute; bottom:5%; right:10%; z-index:22; background:url(template/default/bg_000000_80.png); color:#FFF; padding:20px; border-radius:20px;}
+    #pannello_login .pannello_login_ticker div {overflow:auto; overflow-x:hidden;}
+	
+	#pannello_login .pannello_login_layer {position:absolute; top:0; left:0px; z-index:21; width:100%; height:100%; background:#fff url(template/default/sfondo_puntini.png); opacity:0.2;}
+	#pannello_login .pannello_login_immagini {position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:20; background:#9CF;}
+	
+	#pannello_login .spazio_separatore {height:2em;}
+
+  </style>
+
+<script>
+if (piattaforma == "ipad") {
+}
+</script>
+
+  <script>
+	
+/*----------------------------------------------------------------------*/
+
+	function pannello_login_avvia_animazione() {
+	}
+	
+/*----------------------------------------------------------------------*/  
+  
+jQuery(window).load(function () {
+
+
+		pannello_login_avvia_animazione();
+		
+
+});
+	
+	$(function() {
+		
+		var login_pannello, login_form, login_button, login_status, login_spinner, login_in_corso;
+		
+		login_pannello	= $("#pannello_login");
+		login_form		= login_pannello.find(".pannello_login_form");
+		login_button	= login_form.find("button");
+		login_status	= login_form.find(".pannello_login_scorrevole_status");
+		login_spinner	= login_form.find(".spinner");
+		login_in_corso	= new ByRef(false);
+		
+		//immagini di sfondo
+		login_pannello.find(".pannello_login_immagini").backstretch(["img_resize.aspx?w=1366&src=public/immagini_login/default/w1.jpeg", "img_resize.aspx?w=1366&src=public/immagini_login/default/w2.jpeg", "img_resize.aspx?w=1366&src=public/immagini_login/default/w3.jpeg" ], {duration: 30000, fade: 900});
+	
+		//centra il pannello di login
+		login_form.position({
+		  my: "center center",
+		  at: "left+250 center",
+		  of: $(window)
+		});
+		
+		//campi del login
+		//$("#pannello_login .pannello_login_form_accedi").outerHeight( $("#pannello_login input[type='button']").outerHeight() );
+		
+		//click su pulsante accedi
+		login_button.click(function() {
+			
+			//nasconde il pulsante per evitare doppi click
+			$(this).hide();
+			
+			if (login_in_corso.value == false) {
+				login_in_corso.value = true;
+				login2_esegui(login_form, login_button, login_status, login_spinner, login_in_corso);
+			}
+			login_pannello.find(".pannello_login_immagini").backstretch("destroy", true);
+		});
+		
+		//invio su campo testo del form
+		login_form.find("input[type='text'], input[type='password']").keypress(function (e) {
+			if (e.which == 13) {
+
+				if (login_in_corso.value == false) {
+					login_in_corso.value = true;
+					login2_esegui(login_form, login_button, login_status, login_spinner, login_in_corso);
+				}
+				login_pannello.find(".pannello_login_immagini").backstretch("destroy", true);
+
+				e.preventDefault();
+				return false;
+			}
+		});
+		
+	});
+
+/*----------------------------------------------------------------------*/
+
+  </script>
+
+<div style="height: 602px; width: 1366px; display: block;" id="pannello_login" class="pannello">
+
+  <form style="top: 200px; left: 100px;" class="pannello_login_form">
+
+    <input name="codice" value="1" type="hidden">
+
+    <div class="card" style="box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75); background-color:#FCFCFC;">
+      <div class="card_contenuti">
+        <div><img src="WeGest%20Software_files/logo_wegest_trasparente.png"></div>
+
+        <div class="spazio_separatore"></div>
+        
+        <input name="username" placeholder="  Nome utente" type="text">
+
+        <div class="spazio_separatore"></div>
+
+        <input name="password" placeholder="  Password" type="password">
+
+        <div class="spazio_separatore"></div>
+        
+        <button type="button" class="conferma flat ripple">
+          Accedi <i class="fa fa-arrow-right"></i>
+        </button>
+        
+        <div class="spazio_separatore"></div>
+
+        <div class="avanzamento"></div>
+        
+        <div class="spazio_separatore"></div>
+        
+        <div class="pannello_login_scorrevole_status">Area di accesso</div>
+
+        <div class="spazio_separatore"></div>
+        
+      </div>
+    </div>
+  </form>
+
+  <div class="pannello_login_layer" style="display:none;"></div>
+  
+  <div style="position: absolute; z-index: 20; background: transparent none repeat scroll 0% 0%;" class="pannello_login_immagini"><div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 602px; width: 1366px; z-index: -999998; position: absolute;" class="backstretch"><img src="WeGest%20Software_files/img_resize.jpg" style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1366px; height: 1006px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -202px;"></div></div>
+
+</div>
+
+
+
+</div>
+
+
+
+</body></html>
