@@ -23,6 +23,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.analytics.GoogleAnalytics;
+import com.onesignal.OneSignal;
 import com.robotemplates.webviewapp.R;
 import com.robotemplates.webviewapp.WebViewAppApplication;
 import com.robotemplates.webviewapp.WebViewAppConfig;
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity
 
 		// bind data
 		bindData();
-
+		OneSignal.startInit(this).init();
 		// init analytics tracker
 		((WebViewAppApplication) getApplication()).getTracker();
 

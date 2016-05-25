@@ -20,12 +20,20 @@
 
 			<include layout="@layout/toolbar" />
 
+
+			<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="850dp"
+				android:fillViewport="true" >
+
 			<FrameLayout
 				android:id="@+id/container_drawer_content"
 				android:layout_width="match_parent"
 				android:layout_height="850dp"
 				android:background="@color/global_color_blue_primary"
 				android:layout_gravity="center_vertical" />
+
+			</ScrollView>
 
 		</LinearLayout>
 
