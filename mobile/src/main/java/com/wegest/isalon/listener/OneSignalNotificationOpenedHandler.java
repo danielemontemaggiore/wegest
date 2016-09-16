@@ -1,12 +1,12 @@
-package com.robotemplates.webviewapp.listener;
+package com.wegest.isalon.listener;
 
 import android.content.Context;
 import android.content.Intent;
 
 import com.onesignal.OneSignal;
-import com.robotemplates.webviewapp.WebViewAppApplication;
-import com.robotemplates.webviewapp.activity.MainActivity;
-import com.robotemplates.webviewapp.utility.Logcat;
+import com.wegest.isalon.WebViewAppApplication;
+import com.wegest.isalon.activity.MainActivity;
+import com.wegest.isalon.utility.Logcat;
 
 import org.json.JSONObject;
 

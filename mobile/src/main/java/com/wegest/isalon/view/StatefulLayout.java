@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.view;
+package com.wegest.isalon.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.robotemplates.webviewapp.R;
+import com.wegest.isalon.R;
 
 
 public class StatefulLayout extends FrameLayout

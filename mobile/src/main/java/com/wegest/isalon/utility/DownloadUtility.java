@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.utility;
+package com.wegest.isalon.utility;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Environment;
 
-import com.robotemplates.webviewapp.WebViewAppConfig;
+import com.wegest.isalon.WebViewAppConfig;
 
 
 // requires android.permission.WRITE_EXTERNAL_STORAGE

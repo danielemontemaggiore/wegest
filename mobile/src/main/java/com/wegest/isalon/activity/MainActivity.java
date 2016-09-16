@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.activity;
+package com.wegest.isalon.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,17 +17,16 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.onesignal.OneSignal;
-import com.robotemplates.webviewapp.R;
-import com.robotemplates.webviewapp.WebViewAppApplication;
-import com.robotemplates.webviewapp.WebViewAppConfig;
-import com.robotemplates.webviewapp.fragment.MainFragment;
+import com.wegest.isalon.R;
+import com.wegest.isalon.WebViewAppApplication;
+import com.wegest.isalon.WebViewAppConfig;
+import com.wegest.isalon.fragment.MainFragment;
 
 
 public class MainActivity extends AppCompatActivity
@@ -78,6 +77,7 @@ public class MainActivity extends AppCompatActivity
 
 		// bind data
 		bindData();
+		//AdjustKeyboard.assistActivity(this);
 		OneSignal.startInit(this).init();
 		// init analytics tracker
 		((WebViewAppApplication) getApplication()).getTracker();

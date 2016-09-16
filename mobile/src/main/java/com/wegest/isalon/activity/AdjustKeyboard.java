@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.activity;
+package com.wegest.isalon.activity;
 
 import android.app.Activity;
 import android.graphics.Rect;

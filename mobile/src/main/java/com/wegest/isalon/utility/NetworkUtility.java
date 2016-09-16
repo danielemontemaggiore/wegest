@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.utility;
+package com.wegest.isalon.utility;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

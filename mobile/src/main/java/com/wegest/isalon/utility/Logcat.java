@@ -1,8 +1,8 @@
-package com.robotemplates.webviewapp.utility;
+package com.wegest.isalon.utility;
 
 import android.util.Log;
 
-import com.robotemplates.webviewapp.WebViewAppConfig;
+import com.wegest.isalon.WebViewAppConfig;
 
 
 public final class Logcat

@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.utility;
+package com.wegest.isalon.utility;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -8,7 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
-import com.robotemplates.webviewapp.R;
+import com.wegest.isalon.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.view;
+package com.wegest.isalon.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

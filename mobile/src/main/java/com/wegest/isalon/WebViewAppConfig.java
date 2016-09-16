@@ -1,5 +1,7 @@
-package com.robotemplates.webviewapp;
+package com.wegest.isalon;
 
+
+import com.wegest.isalon.BuildConfig;
 
 public class WebViewAppConfig
 {

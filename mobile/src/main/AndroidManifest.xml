@@ -2,7 +2,7 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="com.robotemplates.webviewapp"
+	package="com.wegest.isalon"
 	android:installLocation="auto">
 	
 	<!-- versionCode, versionName, minSdkVersion, targetSdkVersion properties are set via Gradle script -->
@@ -30,7 +30,7 @@
 	-->
 
 	<application
-		android:name=".WebViewAppApplication"
+		android:name="com.wegest.isalon.WebViewAppApplication"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
 		android:theme="@style/Theme.WebViewApp.Blue"
@@ -43,11 +43,11 @@
 		<meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
 
 		<activity
-			android:name=".activity.MainActivity"
+			android:name="com.wegest.isalon.activity.MainActivity"
 			android:label="@string/app_name"
 			android:launchMode="standard"
 			android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-			android:windowSoftInputMode="adjustPan"
+			android:windowSoftInputMode="adjustResize"
 			android:screenOrientation="landscape">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />

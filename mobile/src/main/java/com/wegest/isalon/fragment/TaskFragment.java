@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.fragment;
+package com.wegest.isalon.fragment;
 
 import java.util.LinkedList;
 import java.util.List;

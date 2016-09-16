@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp.fragment;
+package com.wegest.isalon.fragment;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -14,7 +14,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -38,16 +37,16 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.robotemplates.webviewapp.R;
-import com.robotemplates.webviewapp.WebViewAppConfig;
-import com.robotemplates.webviewapp.listener.WebViewOnKeyListener;
-import com.robotemplates.webviewapp.listener.WebViewOnTouchListener;
-import com.robotemplates.webviewapp.utility.ContentUtility;
-import com.robotemplates.webviewapp.utility.DownloadUtility;
-import com.robotemplates.webviewapp.utility.Logcat;
-import com.robotemplates.webviewapp.utility.NetworkUtility;
-import com.robotemplates.webviewapp.utility.PermissionUtility;
-import com.robotemplates.webviewapp.view.StatefulLayout;
+import com.wegest.isalon.R;
+import com.wegest.isalon.WebViewAppConfig;
+import com.wegest.isalon.listener.WebViewOnKeyListener;
+import com.wegest.isalon.listener.WebViewOnTouchListener;
+import com.wegest.isalon.utility.ContentUtility;
+import com.wegest.isalon.utility.DownloadUtility;
+import com.wegest.isalon.utility.Logcat;
+import com.wegest.isalon.utility.NetworkUtility;
+import com.wegest.isalon.utility.PermissionUtility;
+import com.wegest.isalon.view.StatefulLayout;
 
 import java.io.File;
 
@@ -118,9 +117,9 @@ public class MainFragment extends TaskFragment implements SwipeRefreshLayout.OnR
 		mWebView.getSettings().setLoadWithOverviewMode(true);
 		mWebView.getSettings().setUseWideViewPort(true);
 //******************************************* AGGIUNTO DA ME ******************************************
-		mWebView.setPadding(0, 0, 0, 0);
-		mWebView.setInitialScale(getScale());
-		//getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+		//mWebView.setPadding(0, 0, 0, 0);
+		//mWebView.setInitialScale(getScale());
+		getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 		return mRootView;
 	}
 	

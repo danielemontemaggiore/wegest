@@ -1,4 +1,4 @@
-package com.robotemplates.webviewapp;
+package com.wegest.isalon;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,7 +6,8 @@ import android.content.Context;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 import com.onesignal.OneSignal;
-import com.robotemplates.webviewapp.listener.OneSignalNotificationOpenedHandler;
+import com.wegest.isalon.R;
+import com.wegest.isalon.listener.OneSignalNotificationOpenedHandler;
 
 
 public class WebViewAppApplication extends Application

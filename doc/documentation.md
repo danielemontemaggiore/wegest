@@ -95,11 +95,11 @@ Project has the following structure (directories are marked by square braces):
 Java packages:
 
 - com.robotemplates.webviewapp - contains application class and main config class
-- com.robotemplates.webviewapp.activity - contains activities representing screens
-- com.robotemplates.webviewapp.fragment - contains fragments with main application logic
-- com.robotemplates.webviewapp.listener - contains event listeners
-- com.robotemplates.webviewapp.utility - contains utilities
-- com.robotemplates.webviewapp.view - contains custom views and layouts
+- com.wegest.isalon.activity - contains activities representing screens
+- com.wegest.isalon.fragment - contains fragments with main application logic
+- com.wegest.isalon.listener - contains event listeners
+- com.wegest.isalon.utility - contains utilities
+- com.wegest.isalon.view - contains custom views and layouts
 - im.delight.android.webview - implementation of advanced webview component
 - name.cpr - implementation of video enabled webview component
 
